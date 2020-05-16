@@ -627,7 +627,8 @@
 
             <div class="row">
               <div class="col-lg-7 aos-init aos-animate" data-aos="fade-right">
-                <img src="assets/images/project1.webp" class="img-fluid" alt="" style="width: 100%; margin-bottom: 1em;">
+                <img src="assets/images/project1.png" class="img-fluid" alt="" style="width: 100%; margin-bottom: 1em;" id="dromer-image">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSHVUk-_IjlVH09iaNlWRJvyglecDgs_HduNAMdXGRt14IWF1cpBblCYPxc9AJgdg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" id="dromer-slide" style="width: 100%; display:none;"></iframe>
               </div>
               <div class="col-lg-5 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left">
                 <div class="project-title">Project | 01</div>
@@ -646,7 +647,7 @@
               </div>
               <div class="col-lg-5 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left">
                 <div class="project-title">Project | 02</div>
-                <h3><a href="https://ashwingangadharan.github.io/portfolio/pages/airports/airports.html">Airport Database Management</a></h3>
+                <h3>Airport Database Management</h3>
                 <p><em>Northeastern University, Boston, MA</em></p>
                 <ol>
                     <li>Designed a relational database and E-R model using Oracle and reverse engineering DDL scripts to collect and store data</li>
@@ -698,6 +699,10 @@
             $(document).ready(function(){
                 $(".navbar-toggle").click(function(){
                     $(".navbar-collapse").toggle();
+                });
+                $("#dromer-image").click(function(){
+                    $(this).toggle();
+                    $("#dromer-slide").toggle();
                 });
             });
         </script>
